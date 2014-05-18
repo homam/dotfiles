@@ -11,7 +11,7 @@ ZSH_THEME="ys"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-
+alias localip="ifconfig | grep -o '\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}'"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
