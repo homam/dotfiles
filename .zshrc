@@ -11,7 +11,9 @@ ZSH_THEME="ys"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ifconfig | grep -o '\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}'"
+alias ips="ifconfig | grep -o '\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}'"
+alias copy="tr -d '\n' | pbcopy"
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -49,11 +51,12 @@ alias localip="ifconfig | grep -o '\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}'"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git)
 
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/homam/Library/Haskell/ghc-7.6.3/lib/hdevtools-0.1.0.5/bin:/Users/homam/Library/Haskell/ghc-7.6.3/lib/hdocs-0.2.0.0/bin"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/mongodb/2.4.9/bin:/Users/homam/Library/Haskell/ghc-7.6.3/lib/hdevtools-0.1.0.5/bin:/Users/homam/Library/Haskell/ghc-7.6.3/lib/hdocs-0.2.0.0/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
@@ -68,4 +71,6 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/homam/Library/H
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
+
+unalias gm
 
