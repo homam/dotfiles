@@ -14,6 +14,11 @@ alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias ips="ifconfig | grep -o '\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}'"
 alias copy="tr -d '\n' | pbcopy"
 
+realpath() {
+    [[ $1 = /* ]] && echo "$1" || echo "$PWD/${1#./}"
+}
+
+
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
