@@ -10,7 +10,8 @@ ZSH_THEME="ys"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias ip="curl http://tnx.nl/ip"
+# alias ip="curl icanhazip.com"
 alias ips="ifconfig | grep -o '\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}\.\d\{1,3\}'"
 alias copy="tr -d '\n' | pbcopy"
 
